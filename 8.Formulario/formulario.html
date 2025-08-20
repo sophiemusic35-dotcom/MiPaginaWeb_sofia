@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Formulario basico</h2>
+    <form action="">
+        <label for="nombre">Nombre:</label> 
+        <input type="text" name="" id="nombre">
+        <br><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="" id="contrasena">
+        <br><br>
+        <input type="button" value="Enviar con input">
+        <button type="button">Eviar con button</button>
+    </form>
+    <hr>
+    <h2>Formulario completo</h2>
+    <form action="">
+        <label for="nombre">Nombre:</label> 
+        <input type="text" name="" id="nombre" required> <!--Para que sea obligatorio llenar un campo-->
+        <br><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="" id="contrasena">
+        <p>
+            <label for="edad">Edad:</label>
+            <input type="number" name="" id="edad" min="0" max="10">
+        </p>
+        <p>
+            <label for="buscar">Buscar 🕵️‍♀️:</label>
+            <input type="search" name="" id="buscar">
+        </p>
+        <p>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="" id="fecha" min="2025-05-30" max="2025-08-31">
+        </p>
+        <p>
+            <label for="fecha1">Fecha Cita:</label>
+            <input type="datetime-local" name="" id="fecha1">
+        </p>
+        <p>
+            <h2>Sexo:</h2>
+            <label for="mujer">Mujer:</label>
+            <input type="radio" name="Sexo" id="mujer"> <!--Para colocar algo de manera pre determinada usar el: checked-->
+            <label for="hombre">Hombre:</label>
+            <input type="radio" name="Sexo" id="hombre">
+            <label for="otro">Otro:</label>
+            <input type="radio" name="Sexo" id="otro">
+        </p>
+        <p>
+            <h2>Gustos:</h2>
+            <label for="bailar">Bailar</label>
+            <input type="checkbox" name="" id="bailar">
+            <label for="comer">Comer</label>
+            <input type="checkbox" name="" id="comer">
+            <label for="cantar">Cantar</label>
+            <input type="checkbox" name="" id="cantar">
+        </p>
+        <p>
+            <h2>Selector unico: </h2>
+            <label for="deporte">Seleccione su deporte favorito</label>
+            <select name="" id="deporte">
+                <option value="futbol">Futbol⚽</option>
+                <option value="bal">Baloncesto🏀</option>
+                <option value="tenis">Tenis⚾</option>
+                <option value="nat">Natacion🏊‍♂️</option> <!--selected para colocarlo como predeterminado-->
+            </select>
+        </p>
+        <p>
+            <h2>Selector multiple: </h2>
+            <label for="comida">Seleccione su comida favorito</label>
+            <br>
+            <select multiple="" id="comida"> <!--En cuaquier lado de la etiqueta colocar el multiple-->
+                <option value="pasta">Pasta</option>
+                <option value="carne">Punta de anca</option>
+                <option value="lenteja">Lentajas</option>
+                <option value="arroz">Arroz con leche</option> 
+            </select>
+        </p>
+        <p>
+            <label for="mensaje">Mensaje</label>
+            <br>
+            <textarea name="" id="mensaje" cols="30" rows="2"></textarea> <!--El cols y el rows (Filas y columnas) sirve para ampliar-->
+        </p>
+        <p>
+            <h2>Subir archivos </h2>
+            <input type="file" name="" id="" accept="image/jpg, image/png">
+        </p>
+        <p>
+            <h2>Subir documentoos </h2>
+            <input type="file" name="" id="" accept=".docx, .pdf">
+        </p>
+        <p>
+            <h2>Botones</h2>
+            <button type="button">Boton estandar</button>
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button> <!--Borra la informacion registrada-->
+            <button disabled="disabled">Desabilitado</button>
+        </p>
+    </form>
+</body>
+</html>
